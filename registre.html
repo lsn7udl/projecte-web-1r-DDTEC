@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="“ca”">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre</title>
+    <link rel="stylesheet" href="estilS.css" type="text/css" />
+    <link rel="icon" href="./images/favicon-Infernofest.png" type="image/png" />
+  </head>
+
+  <body class="body">
+    <header>
+      <nav class="fondomenu">
+        <a href="./index.html"><img class="logo" src="./images/logo-Infernofest.png" alt="logo_Infernofest"></a>
+        <ul class="menu">
+          <li class="elementmenu">
+            <a class="enllaç" href="./index.html#dates" >Dates</a>
+          </li>
+          <li class="elementmenu">
+            <a class="enllaç" href="./index.html#itinerari" >Itinerari</a>
+          </li>
+          <li class="elementmenu">
+            <a class="enllaç" href="./index.html#patrocinadors" >Sponsors</a>
+          </li>
+          <li class="elementmenu">
+            <a class="enllaç" href="./FAQ.html" target="_blank">FAQ</a>
+          </li>
+          <li class="elementmenu">
+            <a class="enllaç" href="./contacte.html" target="_blank">Contacte</a>
+          </li>
+          <li class="elementmenu">
+            <a class="enllaç" href="./registre.html">Registre</a>
+          </li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="seccio-registre">
+      <h1>REGISTRA'T</h1>
+      <div id="contacteregistre">
+        <div class="formulariregistre">
+          <form
+            action="mailto:info@infernofest.com"
+            method="post"
+            enctype="text/plain">
+            <div class="campos">
+              <input type="text" id="nom" name="nom" placeholder="Nom:"required />
+            </div>
+            <div class="campos">
+              <input type="email" id="email" name="email" placeholder="Email:" required />
+            </div>
+            <div class="campos">
+              <input
+                type="password"
+                id="contrasenya"
+                name="contrasenya"
+                required
+                placeholder="Contrasenya:"
+                minlength="8"
+                pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)[a-zA-Z\d@$!%?&]{8,}$"
+                title="Al menos 8 caracteres, una mayúscula, una minúscula y un número" />
+            </div>
+            <div>
+              <button class="botoenviar" type="registre">Registrar-me</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <section class="logos">
+        <div class="container-logos">
+          <a href="https://x.com/?lang=ca" target="_blank" class="logo-enllaç">
+            <img src="images/xxss/icono-x-B.svg" alt="logo de X" />
+          </a>
+          <a
+            href="https://www.instagram.com/accounts/login/"
+            target="_blank"
+            class="logo-enllaç">
+            <img src="./images/xxss/icono-insta-B.svg" alt="logo de Instagram"/>
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="logo-enllaç">
+            <img src="./images/xxss/icono-yt-B.svg" alt="logo de YouTube" />
+          </a>
+          <a
+            href="https://www.tiktok.com/es-419/"
+            target="_blank"
+            class="logo-enllaç">
+            <img src="./images/xxss/icono-tiktok-B.svg" alt="logo de TikTok" />
+          </a>
+          <a
+            href="https://es.pinterest.com/"
+            target="_blank"
+            class="logo-enllaç">
+            <img src="./images/xxss/icono-pinterest-B.svg" alt="logo de Pinterest" />
+          </a>
+        </div>
+      </section>
+
+      <nav class="enllaços-footer">
+        <a href="condicions.html" target="_blank" class="footer-enllaç"> Termes i condicions </a>
+        <a href="cookies.html" target="_blank" class="footer-enllaç"> Política de Cookies </a>
+        <a href="privadesa.html" target="_blank" class="footer-enllaç"> Política de Privadesa </a>
+      </nav>
+    </footer>
+  </body>
+</html>

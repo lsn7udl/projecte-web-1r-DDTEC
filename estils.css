@@ -1,0 +1,784 @@
+/* ESTILS TITOLS SECCIONS */
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  margin-top: 5px;
+}
+
+/* MENU */
+.logo{
+  height: 80px;
+  display: block; 
+  text-align: left;
+}
+
+.enllaç{
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.enllaç:hover {
+  color:rgb(1, 149, 255);
+  background-color: #ffffff;
+}
+
+.fondomenu {
+  display: flex;
+  align-items: center;
+  background-color:rgba(0,0,0,0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.fondomenu img.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:30px;
+}
+
+.fondomenu ul {
+  left: 50%;
+  top: 50%;
+  padding-left: 24%;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    text-align: center;
+}
+.elementmenu{
+    list-style-type: none;
+    display:inline;
+    padding-right: 20px;
+}
+
+#dates,
+#itinerari,
+#patrocinadors {
+  scroll-margin-top: 110px;
+}
+
+/* ESTILS BODY */
+.body {
+  padding-top: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+/* SECCIO HERO INICI */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+.rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 48px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titolgran {
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.subtitol {
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.boto {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(1, 149, 255);
+  padding: 12px 20px;
+  margin-top: 22px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boto:hover {
+  background: rgb(0, 213, 255);
+  transform: scale(1.05);
+}
+
+.boto:active {
+  transform: scale(0.95);
+}
+
+/* SECCIÓ DATES INICI */
+.dates .imgdates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dates .fotodates {
+  width: 500px;
+  margin-top: 25px;
+  margin-left: 50px;
+  height: auto;
+}
+
+.dates .textdates {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  margin-bottom: 45px;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+}
+
+/* SECCIO ITINERARI INICI */
+table {
+  margin: 20px auto 5px;
+  width: fit-content;
+  border: 2px solid rgb(1, 149, 255);
+  border-collapse: collapse;
+}
+
+thead th {
+  padding: 10px 30px;
+  text-align: center;
+  background-color: rgb(1, 149, 255);
+  border: 1px solid rgb(1, 149, 255);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px 30px;
+  text-align: center;
+  border: 1px solid rgb(1, 149, 255);
+  color: black;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* SECCIO PATROCINADORS INICI */
+.graella-patrocinadors {
+  padding: 0px 180px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 280px);
+  grid-gap: 5px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.patrocinador {
+  display: block;
+  width: 240px;
+  height: 240px;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.patrocinador img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.patrocinador:hover {
+  transform: scale(1.08);
+}
+
+.patrocinador:active {
+  transform: scale(0.97);
+}
+
+.patrocinadors .boto {
+  display: block;
+  margin: 40px auto;
+  width: fit-content;
+}
+
+/* SECCIO FOOTER */
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.logos {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.container-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 0 auto;
+}
+
+.logo-enllaç {
+  display: block;
+  width: 40px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.logo-enllaç img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-enllaç:hover {
+  transform: scale(1.1);
+}
+
+.enllaços-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-enllaç {
+  color: white;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+/* SECCIO FAQ */
+.seccio-faqs {
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.graella-faqs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 75px);
+  grid-gap: 80px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.faqs-casella {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgb(1, 149, 255);
+  width: 100%;
+  transition: transform 0.3s ease;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faqs-casella h3 {
+  color: rgb(1, 149, 255);
+  font-size: 16px;
+  margin: 0 0 15px 0;
+}
+
+.faqs-casella p {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.faqs-casella:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 2px 25px rgb(1, 149, 255);
+}
+
+/* ESTIL TERMES I CONDICIONS, POLÍTICA DE COOKIES I POLÍTICA DE PRIVADESA */
+.estil-text-legal {
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* SECCIÓ CONTACTE */
+.expmapa .xarxes {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+  width: 8%;
+}
+.expmapa .xarxes img {
+  width: 40px;
+  height: 40px;
+}
+
+.expmapa .mapa {
+  width: 500px;
+  height: 350px;
+  border: 0;
+}
+
+.expmapa .subtitolcontacte {
+  color: rgb(0, 52, 121);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.expmapa .textmapa {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  width: 500px;
+}
+
+.contacte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+
+.formulari form {
+  background-color: rgba(1, 149, 255, 0.2);
+  border-radius: 20px;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  height: 350px;
+  width: 500px;
+  position: relative;
+}
+
+form .campos label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form .campos input,
+form .campos textarea {
+  display: block;
+  width: 100%;
+  border: 1.5px solid rgb(0, 52, 121);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.formulari .campos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  width: 450px;
+  gap: 12px;
+}
+
+#missatge {
+  height: 100px;
+}
+
+.botoenviar {
+  background-color: rgb(1, 149, 255);
+  color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.botoenviar:hover {
+  background: rgb(0, 213, 255);
+}
+
+form .campos {
+  position: relative;
+}
+
+/* SECCIÓ REGISTRE */
+
+.seccio-registre,
+.seccio-contacte {
+  padding: 50px;
+}
+
+#contacteregistre {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.formulariregistre form {
+  background-color: rgba(1, 149, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+form .campos label {
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form .campos input,
+form .campos textarea {
+  display: block;
+  width: 100%;
+  border: 1.5px solid rgb(0, 52, 121);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.formulari .campos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  width: 450px;
+  gap: 12px;
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 768px) {
+  /* TÍTULOS */
+    h1 {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  h6 {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  p,
+  ul,
+  li {
+    font-size: 14px;
+  }
+
+
+  /* MENÚ */
+  .fondomenu {
+    padding: 0 10px;
+  }
+
+  .fondomenu img.logo {
+    height: 60px;
+    padding: 8px 15px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .elementmenu {
+    padding-right: 0;
+  }
+
+  .enllaç {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+
+  /* BODY */
+  .body {
+    padding-top: 100px;
+  }
+
+
+  /* HERO */
+  .hero img {
+    width: 200%;
+    height: 90vb;
+  }
+
+  .rectangle {
+    padding: 30px 30px;
+    border-radius: 12px;
+  }
+
+  .titolgran {
+    font-size: 28px;
+    margin-top: 12px;
+  }
+
+  .subtitol {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .boto {
+    font-size: 16px;
+    padding: 10px 16px;
+    margin-top: 18px;
+    border-radius: 36px;
+  }
+
+
+  /* SECCIÓN DATES */
+  .dates .imgdates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dates .fotodates,
+  .dates .textdates {
+    width: 80vw;
+    margin: 10px 0;
+  }
+
+
+  /* SECCIÓN ITINERARI */
+  table {
+    width: 95vw;
+    margin: 15px auto 5px;
+    border: 1.5px solid rgb(1, 149, 255);
+  }
+
+  thead th,
+  tbody td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+
+  /* SECCIÓN PATROCINADORS */
+  .graella-patrocinadors {
+    padding: 20px 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+
+  .patrocinador {
+    width: 180px;
+    height: 180px;
+  }
+
+
+  /* SECCIÓN FAQ */
+  .seccio-faqs {
+    padding: 20px 15px;
+  }
+
+  .graella-faqs {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 70px);
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
+
+  .faqs-casella {
+    padding: 18px;
+  }
+
+  .faqs-casella h3 {
+    font-size: 15px;
+  }
+
+  .faqs-casella p {
+    font-size: 13px;
+  }
+
+
+  /* SECCIÓN LEGAL */
+  .estil-text-legal {
+    padding: 20px 15px;
+  }
+
+
+  /* SECCIÓN CONTACTE */
+  .expmapa .xarxes {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .expmapa .xarxes img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .expmapa .mapa,
+  .expmapa .textmapa {
+    width: 100%;
+  }
+
+  .contacte {
+    flex-direction: column;
+    margin: 0 5%;
+  }
+
+  .formulari form {
+    width: 90vw;
+    padding: 15px;
+    height: auto;
+    margin: 20px;
+  }
+
+  .formulari .campos {
+    width: 90vw;
+  }
+
+  #missatge {
+    height: 80px;
+  }
+
+
+  /* SECCIÓN REGISTRE */
+  .seccio-registre,
+  .seccio-contacte {
+    padding: 20px 15px;
+  }
+
+  .formulariregistre form {
+    width: 90vw;
+    padding: 20px;
+  }
+}
